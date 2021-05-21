@@ -26,8 +26,8 @@ t = Thread(target=recieve)
 t.daemon = True
 t.start()
 ```
-If we directly call the recieve() function, the program will get into infinite loop and further code will not be executed tha includes ```root.mainloop()```
-which helps to display the GUI window by putting it infinite loop. Also if we call recieve() after ```root.mainloop()``` , it would be executed only after we close the window (break the loop). So, We want to run both of these loops together and we can do so with help of threading.
+If we directly call the recieve() function, the program will get into infinite loop and further code will not be executed that includes ```root.mainloop()```
+which helps to continuously display the GUI window by putting it in an infinite loop. Also if we call recieve() after ```root.mainloop()```, it would be executed only after we close the window (break the loop). So, We want to run both of these loops together and we can do so with help of threading.
 
 tkinter library of python for GUI,
 ![](chat.jpg)
